@@ -1,0 +1,33 @@
+
+@import "../../global.scss";
+
+
+.menu{
+    width: 100vw;
+    height: 50px;
+    background-color: $mainColor;
+    position: fixed;
+    top: 1px;
+    right: -100vw;
+    z-index: 2;
+    margin-top: 70px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease;
+    ul{
+        display: flex;
+        li{
+            margin: 10px;
+            a{
+                color: white;
+            }
+        }
+    }
+
+    &.active{
+        right: 0;
+    }
+
+}

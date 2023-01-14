@@ -1,0 +1,116 @@
+
+@import "../../global.scss";
+
+
+.portfilio{
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    h1{
+        font-size: 20px;
+        margin-top: 10px;
+        text-transform: capitalize;
+        overflow: hidden;
+        @include mobile{
+            padding: 10px;
+    }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px;
+        padding: 20px;
+        height:100px;
+        width: 70%;
+        overflow: hidden;
+        text-align: center;
+        @include mobile{
+            width: 100%;
+            height:max-content;
+          
+        }
+        li{
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px ;
+            font-size: 12px;
+            padding:5px;
+            border-radius: 5px;
+            @include mobile{
+              
+
+            }
+            &.active{
+                background-color: $mainColor;
+                color: white;
+                border: white 0.1px solid;
+
+            }
+        }
+
+    }
+
+    .portfolio_container{
+        width: 70%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        gap: 10px;
+        padding:10px;
+            .item{
+                width: 220px;
+                height: 150px;
+                border-radius: 10px;
+                // overflow: hidden;
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+                transition: all 1s ease;
+                @include mobile{
+                    width: 120px;
+                    height: 100px;
+                    overflow: hidden;
+
+                }
+
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                    transition: all 1s ease;
+
+                }
+                h3{
+                    position: absolute;
+                    top: 40%;
+                    left: 30%;
+                    color: white;
+                    font-size: 20px;
+                    @include mobile{
+                        left: 0;
+                        font-size: 16px;
+                    }
+
+                }
+                &:hover{
+                    background-color:$mainColor;
+                    z-index:  1;
+                  img{
+                        opacity:0.2;
+                        z-index: 2;
+                    }
+                }
+            }
+    }
+
+}
