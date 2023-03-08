@@ -1,74 +1,123 @@
 
 
-export const featuredPortfolio = [
+export const frontend = [
     {
         id: 1,
         title: "Social Media App",
         img:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+        demo:"https://fbv1.netlify.app/",
+        github:"https://github.com/kawsar334/facebook-clone/tree/main/src",
     },
     {
         id: 2,
-        title: "Rampa UI Design",
+        title: "Ecommerce ui Design",
         img:
             "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+        demo: "https://glittering-chimera-f1780d.netlify.app/",
+        github: "https://github.com/kawsar334/react-ecommerce",
     },
     {
         id: 3,
-        title: "E-commerce Web Design",
+        title: "Netflix design",
         img:
-            "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+            "https://i.ytimg.com/vi/ZMak63mHq5Y/maxresdefault.jpg",
+        demo: "https://shimmering-lolly-a958cf.netlify.app/",
+        github: "https://github.com/kawsar334/netflix-ui-design-",
     },
     {
         id: 4,
-        title: "Relax Mobile App",
+        title: "fiverr ui design ",
         img:
-            "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+            "https://mms.businesswire.com/media/20211108005361/en/924401/5/Press-Page.jpg",
+        demo: "https://gleaming-sherbet-9b9972.netlify.app/",
+        github: "https://github.com/kawsar334/fiver-clone-ui",
     },
     {
         id: 5,
-        title: "Hero Web Design",
+        title: "Hotel reservation ui design ",
         img:
             "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+        demo: "https://super-bunny-fdec0a.netlify.app/",
+        github: "https://github.com/kawsar334/bloog-ui-design",
     },
     {
         id: 6,
-        title: "Banking App",
+        title: "Blog ui design ",
         img:
             "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
+        demo: "https://precious-gelato-7b372b.netlify.app/",
+        github: "https://github.com/kawsar334/bloog-ui-design",
     },
+    {
+        id: 7,
+        title: "Youtube clone ",
+        img:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+        demo: "https://sparkly-melomakarona-899a4b.netlify.app/",
+        github: "https://github.com/kawsar334/youtube-clone",
+    },
+    {
+        id: 8,
+        title: "Admin pannel design  ",
+        img:
+            "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+        demo: "https://sensational-kitten-57cc73.netlify.app/",
+        github: "https://github.com/kawsar334/admin-panel-/tree/master",
+    },
+
 ];
 
-export const webPortfolio = [
+export const fullstack = [
     {
         id: 1,
-        title: "Web Social Media App",
-        img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+        title: " Mern Web Social Media App",
+        img: "https://blog.hootsuite.com/wp-content/uploads/2021/05/all-apps-1.png",
+        demo:"",
+        github:"",
     },
     {
         id: 2,
-        title: "Web Rampa UI Design",
-        img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
+        title: "Fullstack ecommerce ",
+        img: "https://www.insightssuccess.in/wp-content/uploads/2020/12/785054-ecommerce-istock-020119.jpg",
+        demo: "",
+        github: "",
     },
     {
         id: 3,
-        title: "Web E-commerce Design",
-        img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+        title: "Fullstack booking reservation app ",
+        img: "https://play-lh.googleusercontent.com/eJuvWSnbPwEWAQCYwl8i9nPJXRzTv94JSYGGrKIu0qeuG_5wgYtb982-2F_jOGtIytY",
+        demo: "",
+        github: "",
     },
     {
         id: 4,
-        title: "Web Relax App",
-        img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
+        title: " Fullstack Ecommerce Admin pannel ",
+        img: "https://i.pinimg.com/originals/cb/59/c4/cb59c45379b94ce875352d1e5d94f1de.jpg",
+        demo: "",
+        github: "",
     },
     {
         id: 5,
-        title: "Web Design",
+        title: "Mern blog app ",
         img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
+        demo: "",
+        github: "",
     },
     {
         id: 6,
-        title: "Web Banking App",
-        img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
+        title: "fullstack video sharing app",
+        img: "https://netleon.com/assets/img/blog/develop-an-app-like-you-tube-video-streaming-app-development.jpg",
+        demo: "",
+        github: "",
+    },
+    ,
+    {
+        id: 7,
+        title: "fullstack NetLix app",
+        img: "https://i.ytimg.com/vi/ZMak63mHq5Y/maxresdefault.jpg",
+        demo: "",
+        github: "",
     },
 ];
 

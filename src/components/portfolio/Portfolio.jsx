@@ -1,27 +1,28 @@
 import { useEffect, useState } from "react";
+
 import PortfolioList from "../portfolioList/PortfolioList"
 import "./porfiolio.scss"
 import {
-     featuredPortfolio,
-     webPortfolio,
+     frontend,
+     fullstack,
      designPortfolio,
      contentPortfolio,mobilePortfolio  } from "../../data";
 
 const Portfolio = () => {
-  const [selected, setSelected] = useState("featured") ;
+  const [selected, setSelected] = useState("frontend") ;
   const [data, setData ]= useState([])
   const list = [
     {
-      id: "featured",
-      title: "Featured",
+      id: "frontend",
+      title: "frontend",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "fullstack",
+      title: "fullstack",
     },
     {
       id: "mobile",
-      title: "Mobile App",
+      title: "React Native",
     },
     {
       id: "design",
@@ -35,11 +36,11 @@ const Portfolio = () => {
 
   useEffect(()=>{
     switch(selected){
-      case "featured":
-        setData(featuredPortfolio);
+      case "frontend":
+        setData(frontend);
         break ;
-      case "web":
-        setData(webPortfolio);
+      case "fullstack":
+        setData(fullstack);
         break;
       case "mobile":
         setData(mobilePortfolio);
@@ -51,7 +52,7 @@ const Portfolio = () => {
         setData(contentPortfolio);
         break;
     default :
-    setData(featuredPortfolio);
+    setData(frontend);
     }
 
 
@@ -68,10 +69,13 @@ const Portfolio = () => {
       </ul>
 
       <div className="portfolio_container">
-    { data.map((item=>(   <div className="item" key={item.id }>
+    { data.map((item=>( 
+        <a href={item?.demo} className="item" key={item.id }>
           <img src={item.img} alt="Loaing..." />
           <h3>{item.title} </h3>
-        </div>
+      <h3>{item.title} </h3>
+
+        </a>
     )))
         }
         

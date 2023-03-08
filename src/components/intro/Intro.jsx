@@ -24,14 +24,14 @@ const Intro = () => {
         <div className="intro_wrapper">
           <h2>Hi There , I'm</h2>
           <h1>Kawsar firoz</h1>
-          <h3>Frelance  
+          <h3>  
             <span >
               <Typical
                 steps={['', 2000, 'Fullstack web Developer', 500]}
                 loop={Infinity}
-                wrapper="p"
-                
+                // wrapper="p"                
               />
+             
             </span>
           </h3>
         </div>
