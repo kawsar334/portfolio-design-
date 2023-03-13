@@ -2,6 +2,10 @@ import "./work.scss"
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import { useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import 'swiper/css';
 
 const Work = () => {
   const [currentSlide, setCurrntSlide] = useState(1) ;
@@ -11,7 +15,7 @@ const Work = () => {
     {
       id: "1",
       icon: "https://as1.ftcdn.net/v2/jpg/04/99/62/44/1000_F_499624431_rGO9fOhjcqkVAEsp0bDaqiub28WGhlhE.jpg",
-      title: "Web Design",
+      title: "Responsibe Web design  ",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       img:
@@ -20,7 +24,7 @@ const Work = () => {
     {
       id: "2",
       icon: "https://as1.ftcdn.net/v2/jpg/04/99/62/44/1000_F_499624431_rGO9fOhjcqkVAEsp0bDaqiub28WGhlhE.jpg",
-      title: "Mobile Application",
+      title: "Dynamic website ",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
@@ -29,7 +33,7 @@ const Work = () => {
     {
       id: "3",
       icon: "https://as1.ftcdn.net/v2/jpg/04/99/62/44/1000_F_499624431_rGO9fOhjcqkVAEsp0bDaqiub28WGhlhE.jpg",
-      title: "Branding",
+      title: "web development",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
@@ -48,7 +52,7 @@ const Work = () => {
   return (
     <div className="work" id="work">
 
-<div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
+<div className="slider" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
 { data.map((item)=>( <div className="slider_container" key={item.id}>
     <div className="item">
       <div className="left">
@@ -57,7 +61,7 @@ const Work = () => {
                   <img src={item.icon} alt="loading..." />
           </div>
           <h2>{item.title}</h2>
-          <p>{item.desc} .</p>
+          {/* <p>{item.desc} .</p> */}
           <span>projects</span>
         </div>
       </div>
@@ -71,6 +75,7 @@ const Work = () => {
 </div>
      <ArrowBackIosNewOutlinedIcon className="arrow arrow_left"  onClick={()=>handleClick("left")}/>
       <ArrowForwardIosOutlinedIcon className="arrow arrow_right" onClick={() => handleClick("right")}  />
+      
 
     </div>
   )

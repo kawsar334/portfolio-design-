@@ -3,13 +3,107 @@
 
 
 .portfilio{
-    // background-color: red;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
+    height: 120vh !important;
+    position: relative;  
+    .details{
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        width: 70%;
+        height: auto;
+        background-color: rgba(255,255,255, 0.8);
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        z-index: 2;
+        @include mobile{
+            width: 90%;
+            left: 0;
+        }
+        .detailsWrapper{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            color: $mainColor;
+            h3{
+                font-weight: 600;
+                text-transform: capitalize;
+                color: $mainColor;
+                text-transform: capitalize;
+
+            }
+            p{
+                text-align: left;
+                width: 100%;
+                height: max-content;
+                padding: 0px 10px;
+            }
+            img{
+                width: 100%;
+                height:400px;
+                object-fit: cover;
+
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+                a{
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #C70039;
+                    border-radius: 10px;
+                    color: white;
+
+                    &:first-child{
+                        background-color: #FF5733;
+                        
+                    }
+
+                }
+            }
+            .close{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                .fa-xmark{
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    color: $mainColor;
+                    transition: all 1s ease;
+                    font-size: 20px;
+                    &:hover{
+                        background-color: $mainColor;
+                        color: white;
+                    }
+                }
+            }
+
+            
+        }
+
+    } 
     h1{
         font-size: 20px;
         margin-top: 10px;
@@ -29,6 +123,7 @@
         width: 70%;
         overflow: hidden;
         text-align: center;
+        transition: 2s all ease;
         @include mobile{
             width: 100%;
             height:max-content;
@@ -41,6 +136,7 @@
             font-size: 12px;
             padding:5px;
             border-radius: 5px;
+            text-transform: capitalize;
             @include mobile{
               
 
@@ -56,7 +152,7 @@
     }
 
     .portfolio_container{
-        width: 70%;
+        width: 80%;
         height: max-content;
         display: flex;
         justify-content: center;
@@ -65,6 +161,7 @@
         overflow: hidden;
         gap: 10px;
         padding:10px;
+        transition: 2s all ease;
             .item{
                 width: 220px;
                 height: 150px;
@@ -73,11 +170,12 @@
                 position: relative;
                 text-align: center;
                 cursor: pointer;
-                transition: all 1s ease;
+                transition: all 2s ease;
                 @include mobile{
                     width: 120px;
                     height: 100px;
                     overflow: hidden;
+                  
 
                 }
 
@@ -92,14 +190,124 @@
                 }
                 h3{
                     position: absolute;
-                    top: 40%;
-                    left: 30%;
+                    top: 0%;
+                    left: 0%;
                     color: white;
                     font-size: 20px;
                     @include mobile{
                         left: 0;
                         font-size: 16px;
                     }
+
+                }
+                .pdesc{
+                   
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        color: white;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 0;
+                        text-transform: capitalize;
+                        @include mobile {
+                               gap: 0;
+                               
+                        
+                            }
+
+                        p {
+                                padding: 0;
+                                margin: 0;
+                                font-weight: 600;
+                                font-size: 20px;
+                                width: 100%;
+                                height: max-content !important;
+                                cursor: pointer;
+                                a{
+
+                                    &:hover{
+                                        color: white;
+                                        font-weight: 600;
+                                    }
+                                }
+                                @include mobile{
+                                    font-size: 13px;
+                                    height: max-content;
+                                    overflow: hidden;
+                                    line-height: 15px;
+                                    margin-bottom: 0px ;
+                                    margin-top: 10px;
+                                    padding: 10px;
+                                 
+                                   
+                                    
+
+                                }
+                            }
+                            div{
+                                display: flex;
+                                justify-content: center;
+                                gap: 5px;
+                                margin-top: 20px;
+                                
+                                a {
+                                        font-size: 14px;
+                                        cursor: pointer;
+                                        margin-bottom: 10px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 5px;
+                                        border: 1px solid white;
+                                        padding: 3px 5px ;
+                                        background-color: rgba(255,255,255, 0.4);
+                                        transition: all 1s ease;
+                                        border-radius: 15px;
+                                        &:hover{
+                                            color: $mainColor;
+                                            background-color: white;
+                                            @include mobile{
+                                                background-color: transparent;
+                                                color: white;
+                                                transform: scale(1.2);
+                                            }
+                                            
+                                        }
+                                        @include mobile {
+                                            padding: 10px;
+                                            border-radius: 50%;
+                                            font-size: 20px;
+                                            border: none;
+                                            background-color: transparent;
+                                            display: none;
+                                        }
+                                        span{
+                                            @include mobile {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    
+
+                            }
+                            
+                            
+                            .detailsBtn{
+                                font-size: 14px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 5px;
+                                background-color:rgba(255,255,255, 0.4);
+                                border-radius: 10px;
+                                padding: 0px 5px;
+                            }
 
                 }
                 &:hover{

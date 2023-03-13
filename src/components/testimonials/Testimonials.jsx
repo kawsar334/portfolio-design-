@@ -1,7 +1,5 @@
 import "./testimonial.scss"
-import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
-import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+
 const Testimonials = () => {
   const data = [
     {
@@ -38,27 +36,30 @@ const Testimonials = () => {
   ];
   return (
     <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
-      <div className="container">
-      {data.map((d)=>(  <div className="card" key={d.id}>
-          <div className="top">
-            {/* <ArrowBackIosNewOutlinedIcon />  */}
-            <img src={d.img} alt="" />
-            {/* <YouTubeIcon /> */}
+      <div className="twrapper">
+
+      <h1 className="theader">About Me</h1>
+      <p className="desc">
+          I am a MERN-Stack WEB Developer. I am working with React, Node.js and MongoDB. I also have experience in developing <b>Static</b> & <b>Dynamic</b> websites using HTML5, CSS3 and JavaScript (ES6). I am a quick learner. I believe in hard work and efficiency.  I always focus on learning new technology. My goal is to become A World-Class Professional Web Developer.Here are a few technologies I've been working with recently 
+      </p>
+        <hr />
+
+      <div className="items">
+          <div className="titem">
+            <h3 className="Titemheader">Front-end</h3>
+            <p className="titemdesc"> HTML5, css3, Sass, JavaScript(ES6) , React.js, Bootstrap, React-router-dom , context api,</p>
           </div>
-          <div className="center">
-          {d.desc}
+          <div className="titem">
+            <h3 className="Titemheader">Back-end</h3>
+            <p className="titemdesc"> Node.js, Express.js, Mongo DB, jwt, bcrypt, </p>
           </div>
-          <div className="bottom">
-            <h3>{d.name}</h3>
-            <h4>{d.title}</h4>
+          <div className="titem">
+            <h3 className="Titemheader">Tools</h3>
+            <p className="titemdesc">Vs Code, git , Npm & Yearn , Netlify, </p>
           </div>
-        </div>
-      ))
-      }
-        {/*  */}
-       
+      </div>
      
+      <hr />
       </div>
     </div>
   )
