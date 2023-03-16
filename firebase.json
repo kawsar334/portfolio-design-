@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "hosting": {
+      "public": "dist/directoryThatContainsIndexHtml"
+    },
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
+
